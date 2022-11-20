@@ -39,10 +39,8 @@ const Header: FunctionComponent<HeaderProps> = ({ rewind }): JSX.Element => {
       className="relative grid grid-flow-col auto-cols-[auto auto] w-full gap-10 pt-6 pl-8 h-20 pb-20 bg-offBlack"
     >
       <Link href="/">
-        <a>
-          <div className="relative col-start-1 text-white text-6xl row-start-1 md:w-fit min-h-full h-full font-rain cursor-sewingHS">
-            X
-          </div>
+        <a className="relative col-start-1 text-white text-6xl row-start-1 w-fit h-fit font-rain cursor-sewingHS">
+          X
         </a>
       </Link>
     </div>
