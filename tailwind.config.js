@@ -20,6 +20,7 @@ module.exports = {
         lib: "Liberation Mono",
         libB: "Liberation Mono Bold",
         fut: "Futurist",
+        fira: "Fira Regular",
       },
       cursor: {
         sewing: "url('/images/sewingCursor.png'), auto",

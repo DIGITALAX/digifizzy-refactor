@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     rewind.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="min-h-screen h-auto min-w-screen w-screen bg-offBlack relative selection:bg-skyBlue selection:text-dull cursor-sewingS">
+    <div className="min-h-screen h-auto min-w-screen w-screen bg-white relative selection:bg-skyBlue selection:text-dull cursor-sewingS">
       <Header rewind={rewind} />
       <Component {...pageProps} />
       <Footer handleRewind={handleRewind} />

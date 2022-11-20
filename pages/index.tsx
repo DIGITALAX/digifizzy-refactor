@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
-import Refactor from "../components/refactor/Refactor";
+import Front from "../components/Home/Front/Front";
+import Text from "../components/Home/Text/Text";
 
 const Home: NextPage = () => {
   return (
@@ -14,8 +14,9 @@ const Home: NextPage = () => {
         <meta property="og:image" content="https://digifizzy.xyz/card.png/" />
         <meta property="og:type" content="website" />
       </Head>
-      <div className="min-w-screen min-h-screen h-screen flex flex-col bg-offBlack">
-        <Refactor />
+      <div className="min-w-screen min-h-screen h-fit flex flex-col">
+        <Front />
+        <Text />
       </div>
     </div>
   );

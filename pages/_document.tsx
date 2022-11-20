@@ -60,6 +60,12 @@ class Document extends NextDocument {
                   font-weight: 400;
                   src: url("./fonts/Internal Rainbows.otf");
                 }
+
+                @font-face {
+                  font-family: "Fira Regular";
+                  font-weight: 400;
+                  src: url("./fonts/FiraCode-Regular.ttf");
+                }
             `,
             }}
           ></style>
