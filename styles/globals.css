@@ -38,6 +38,24 @@
   src: url("/fonts/FiraCode-Regular.ttf");
 }
 
+@font-face {
+  font-family: "America Mono Medium";
+  font-weight: 400;
+  src: url("/fonts/GT-America-Mono-Medium-Trial.otf");
+}
+
+@font-face {
+  font-family: "America Mono Regular";
+  font-weight: 400;
+  src: url("/fonts/GT-America-Mono-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: "America Mono Extended";
+  font-weight: 400;
+  src: url("/fonts/GT-America-Extended-Thin-Trial.otf");
+}
+
 html,
 body {
   padding: 0;

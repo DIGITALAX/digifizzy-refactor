@@ -13,7 +13,7 @@ module.exports = {
         offWhite: "#F2F2F2",
         dull: "#CDAAA4",
       },
-      fontFamily: { 
+      fontFamily: {
         futur: "Futurist",
         mag: "Letter Magic",
         rain: "Internal Rainbows",
@@ -21,6 +21,9 @@ module.exports = {
         libB: "Liberation Mono Bold",
         fut: "Futurist",
         fira: "Fira Regular",
+        amE: "America Mono Extended",
+        amR: "America Mono Regular",
+        amM: "America Mono Medium",
       },
       cursor: {
         sewing: "url('/images/sewingCursor.png'), auto",
@@ -31,4 +34,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

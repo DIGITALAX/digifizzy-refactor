@@ -4,7 +4,7 @@ import { RiEyeCloseFill } from "react-icons/ri";
 
 const Refactor: FunctionComponent = (): JSX.Element => {
   return (
-    <div className="min-h-full w-full min-w-screen h-full grid grid-flow-col auto-cols-[auto auto] relative text-midWhite text-center">
+    <div className="min-h-full w-full min-w-screen h-screen grid grid-flow-col auto-cols-[auto auto] relative text-midWhite text-center">
       <div className="col-start-1 w-full h-full relative grid grid-flow-row auto-rows-[auto auto]">
         <div className="relative row-start-1 w-full h-fit font-lib sm:text-2xl place-self-end p-4 text-lg">
           The refresh of DIGIFIZZY is still in the works. Check back soon.
