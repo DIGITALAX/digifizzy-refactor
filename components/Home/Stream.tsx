@@ -2,13 +2,15 @@ import { FunctionComponent, useContext } from "react";
 import Draggable from "react-draggable";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { GlobalContext } from "../../pages/_app";
+import { useMediaQuery } from "@material-ui/core";
 
 const Stream: FunctionComponent = (): JSX.Element => {
   const { setOpenFrame, newLink } = useContext(GlobalContext);
+  let queryWindowSize1200: boolean = useMediaQuery("(max-width:1200px)");
   return (
     <div className="absolute w-fit h-fit z-40">
       <Draggable
-        defaultPosition={{ x: 200, y: 20 }}
+        defaultPosition={{ x: !queryWindowSize1200 ? 200 : 0, y: 20 }}
         cancel=".frame"
         enableUserSelectHack={false}
       >
@@ -21,8 +23,8 @@ const Stream: FunctionComponent = (): JSX.Element => {
           </div>
           <div className="relative w-fit h-fit justify-self-end row-start-2 border border-white">
             <iframe
-              width="900"
-              height="650"
+              width={!queryWindowSize1200 ? "900" : "550"}
+              height={!queryWindowSize1200 ? "650" : "400"}
               src={newLink}
               title="Digifizzy Stream"
               frameBorder="0"

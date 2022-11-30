@@ -7,6 +7,7 @@ import Volume from "./Volume";
 const Issues: FunctionComponent = (): JSX.Element => {
   const { currentIssue, handleIssueUp, handleIssueDown, allIssues } =
     useIssues();
+    
   return (
     <div className="relative w-full h-full grid grid-flow-col auto-cols-auto row-start-2 justify-self-center">
       <div className="col-start-1 relative w-full h-fit grid grid-flow-col auto-cols-auto bg-black border-2 border-white lg:gap-0 gap-16">
