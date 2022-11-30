@@ -84,6 +84,18 @@ class Document extends NextDocument {
                   font-weight: 400;
                   src: url("./fonts/GT-America-Extended-Thin-Trial.otf");
                 }
+
+                @font-face {
+                  font-family: "Atmosphere";
+                  font-weight: 400;
+                  src: url("./fonts/Atmosphere-Regular.ttf");
+                }
+
+                @font-face {
+                  font-family: "Dosis Regular";
+                  font-weight: 400;
+                  src: url("/fonts/Dosis Regular.ttf");
+                }
             `,
             }}
           ></style>

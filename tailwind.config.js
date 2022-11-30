@@ -19,11 +19,12 @@ module.exports = {
         rain: "Internal Rainbows",
         lib: "Liberation Mono",
         libB: "Liberation Mono Bold",
-        fut: "Futurist",
         fira: "Fira Regular",
         amE: "America Mono Extended",
         amR: "America Mono Regular",
         amM: "America Mono Medium",
+        atmos: "Atmosphere",
+        dosis: "Dosis Regular"
       },
       cursor: {
         sewing: "url('/images/sewingCursor.png'), auto",
