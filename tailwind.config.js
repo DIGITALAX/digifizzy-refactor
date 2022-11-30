@@ -12,6 +12,7 @@ module.exports = {
         skyBlue: "#BBEEFF",
         offWhite: "#F2F2F2",
         dull: "#CDAAA4",
+        sapph: "#0091FF"
       },
       fontFamily: {
         futur: "Futurist",

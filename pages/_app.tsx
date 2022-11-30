@@ -1,26 +1,34 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import { useRef } from "react";
-import Footer from "../components/Layout/Footer";
 import Image from "next/image";
 import DIGIFIZZY from "../components/Home/DIGIFIZZY";
 import Header from "../components/Layout/Header";
+import { createContext, useState } from "react";
+import Stream from "../components/Home/Stream";
+
+export const GlobalProfileContextDefault = {
+  openFrame: false,
+  setOpenFrame: (expressInterest: boolean) => {},
+};
+
+export const GlobalContext = createContext(GlobalProfileContextDefault);
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const rewind = useRef<null | HTMLDivElement>(null);
-  const handleRewind = (): void => {
-    rewind.current?.scrollIntoView({ behavior: "smooth" });
-  };
+  const [openFrame, setOpenFrame] = useState(
+    GlobalProfileContextDefault.openFrame
+  );
   return (
-    <div className="min-h-screen h-auto min-w-screen w-screen relative selection:bg-skyBlue selection:text-dull cursor-sewingS">
-      <div className="absolute w-full h-screen">
-        <Image layout="fill" src={"/images/mask.png"} className="relative" />
+    <GlobalContext.Provider value={{ openFrame, setOpenFrame }}>
+      <div className="min-h-screen h-auto min-w-screen w-screen relative selection:bg-skyBlue selection:text-dull cursor-sewingS">
+        <div className="absolute w-full h-screen">
+          <Image layout="fill" src={"/images/mask.png"} className="relative" />
+        </div>
+        {openFrame && <Stream />}
+        <DIGIFIZZY />
+        <Header />
+        <Component {...pageProps} />
       </div>
-      <DIGIFIZZY />
-      <Header />
-      <Component {...pageProps} />
-      <Footer handleRewind={handleRewind} />
-    </div>
+    </GlobalContext.Provider>
   );
 }
 
