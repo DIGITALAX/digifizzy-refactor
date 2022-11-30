@@ -61,7 +61,7 @@ const Issues: FunctionComponent = (): JSX.Element => {
                 arweave in the process...
               </div>
             </div>
-            <div className="relative w-72 h-96 col-start-2 grid grid-flow-row auto-rows-auto cursor-sewingHS hover:mix-blend-hard-light">
+            <div className="relative w-80 h-[30vw] col-start-2 grid grid-flow-row auto-rows-auto cursor-sewingHS hover:mix-blend-hard-light">
               <Image
                 src={`/images/magazine/mag${currentIssue}.webp`}
                 layout="fill"

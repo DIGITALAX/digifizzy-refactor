@@ -1,8 +1,9 @@
-import { FunctionComponent, useContext } from "react";
+import { FunctionComponent, useContext, useEffect } from "react";
 import { GlobalContext } from "../../pages/_app";
 
 const Header: FunctionComponent = (): JSX.Element => {
-  const { openFrame, setOpenFrame } = useContext(GlobalContext);
+  const { openFrame, setOpenFrame, newLink } = useContext(GlobalContext);
+
   return (
     <div className="relative w-full h-36 grid grid-flow-col auto-cols-auto row-start-1 z-30">
       <div className="relative grid grid-flow-col auto-cols-auto col-start-1 row-start-1 w-full h-fit pt-3 pb-6 px-4">
@@ -12,7 +13,7 @@ const Header: FunctionComponent = (): JSX.Element => {
               <iframe
                 width="200"
                 height="115"
-                src="https://www.youtube.com/embed/dXowrolrFz0?controls=0"
+                src={newLink}
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

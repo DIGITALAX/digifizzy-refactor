@@ -137,6 +137,11 @@
   "resolved" "https://registry.npmjs.org/@types/scheduler/-/scheduler-0.16.2.tgz"
   "version" "0.16.2"
 
+"@types/shuffle-array@^1.0.2":
+  "integrity" "sha512-X8AFrn+D86HFJKer0n2qbG67jHMB4f/QxG28hvNHiouAn84QHVxhuCgGict5djhKP9GZPH2TjCxzf54khqawzQ=="
+  "resolved" "https://registry.npmjs.org/@types/shuffle-array/-/shuffle-array-1.0.2.tgz"
+  "version" "1.0.2"
+
 "@typescript-eslint/parser@^5.21.0":
   "integrity" "sha512-IK6x55va5w4YvXd4b3VrXQPldV9vQTxi5ov+g4pMANsXPTXOcfjx08CRR1Dfrcc51syPtXHF5bgLlMHYFrvQtg=="
   "resolved" "https://registry.npmjs.org/@typescript-eslint/parser/-/parser-5.40.1.tgz"
@@ -1753,6 +1758,11 @@
   "integrity" "sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A=="
   "resolved" "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz"
   "version" "3.0.0"
+
+"shuffle-array@^1.0.1":
+  "integrity" "sha512-0TFRU8zVQaLatWKr0/czo19VyPNgb/a3sBc1GAjVfivfzEGaS54vueNgtAu/8/pW7EM/VF5fwq9zgpLdGyRmVw=="
+  "resolved" "https://registry.npmjs.org/shuffle-array/-/shuffle-array-1.0.1.tgz"
+  "version" "1.0.1"
 
 "side-channel@^1.0.4":
   "integrity" "sha512-q5XPytqFEIKHkGdiMIrY10mvLRvnQh42/+GoBlFW3b2LXLE2xxJpZFdm94we0BaoV3RwJyGqg5wS7epxTv0Zvw=="

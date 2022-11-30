@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { GlobalContext } from "../../pages/_app";
 
 const Stream: FunctionComponent = (): JSX.Element => {
-  const { setOpenFrame } = useContext(GlobalContext);
+  const { setOpenFrame, newLink } = useContext(GlobalContext);
   return (
     <div className="absolute w-fit h-fit z-40">
       <Draggable
@@ -23,7 +23,7 @@ const Stream: FunctionComponent = (): JSX.Element => {
             <iframe
               width="900"
               height="650"
-              src="https://www.youtube.com/embed/dXowrolrFz0?controls=0?rel=0&autoplay=1&mute=1"
+              src={newLink}
               title="Digifizzy Stream"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

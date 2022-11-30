@@ -1,7 +1,13 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FunctionComponent } from "react";
 
 const Collection: FunctionComponent = (): JSX.Element => {
+  const iframes: string[] = ["yt1", "yt2"];
+  const links: string[] = [
+    "https://www.youtube.com/embed/dXowrolrFz0",
+    "https://www.youtube.com/embed/dXowrolrFz0",
+  ];
   return (
     <div className="relative w-[80vw] xl:w-[67vw] h-full grid grid-flow-col auto-cols-auto row-start-3 justify-self-center">
       <div className="col-start-1 relative w-full h-fit grid grid-flow-row auto-rows-auto bg-black border-2 border-sapph gap-40 pt-28">
@@ -10,6 +16,8 @@ const Collection: FunctionComponent = (): JSX.Element => {
             <Image
               src={"/images/ship.png"}
               width={500}
+              objectFit={"cover"}
+              objectPosition={"center"}
               height={300}
               className="relative w-fit h-fit"
             />
@@ -100,7 +108,7 @@ const Collection: FunctionComponent = (): JSX.Element => {
           </div>
         </div>
         <div className="relative w-full h-fit row-start-7 grid grid-flow-col auto-cols-auto pb-8 px-8">
-          <div className="relative w-fit h-full col-start-1 grid grid-flow-col auto-cols-auto">
+          <div className="relative w-fit h-full col-start-1 grid grid-flow-col auto-cols-auto gap-8">
             <div className="relative w-fit h-fit col-start-1 grid grid-flow-col auto-cols-auto gap-2 self-end">
               <div className="relative w-fit h-fit col-start-1 row-start-1 grid grid-flow-col auto-cols-auto">
                 <Image
@@ -127,7 +135,32 @@ const Collection: FunctionComponent = (): JSX.Element => {
                 />
               </div>
             </div>
-            <div className="relative w-fit h-fit col-start-2"></div>
+            <div className="relative w-full h-fit col-start-2 grid grid-flow-col auto-cols-auto gap-2 self-end">
+              {iframes.map((frame: string, index: number) => {
+                return (
+                  <Link
+                    key={index}
+                    href={links[index]}
+                    className={`w-fit h-fit place-self-center cursor-sewingHS col-start-${
+                      index + 1
+                    }`}
+                  >
+                    <a
+                      target={"_blank"}
+                      rel="noreferrer"
+                      className="p-0.5 bg-sapph w-fit h-fit grid grid-flow-col auto-cols-auto cursor-sewingHS"
+                    >
+                      <Image
+                        width={30}
+                        height={50}
+                        src={`/images/${frame}.png`}
+                        className="relative flex col-start-1 place-self-center w-fit h-fit"
+                      />
+                    </a>
+                  </Link>
+                );
+              })}
+            </div>
           </div>
           <div className="relative w-fit h-fit col-start-2 justify-self-end text-white font-dosis text-right text-2xl">
             bit more text about it <br />
