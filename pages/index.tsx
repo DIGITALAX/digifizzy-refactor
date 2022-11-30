@@ -18,12 +18,12 @@ const Home: NextPage = () => {
         <meta property="og:type" content="website" />
       </Head>
       <div className="w-full h-full flex flex-col grid grid-flow-col auto-cols-auto">
-        <div className="relative w-[80vw] xl:w-[67vw] h-fit grid grid-flow-row auto-rows-auto pt-6 col-start-1 place-self-center gap-14 row-start-1">
+        <div className="relative w-full md:w-[80vw] xl:w-[67vw] h-fit grid grid-flow-row auto-rows-auto pt-6 col-start-1 place-self-center gap-14 row-start-1">
           <Screen />
           <Issues />
         </div>
         <div className="relative w-full h-full grid grid-flow-row auto-rows-auto row-start-2 pt-14 gap-14">
-          <div className="absolute w-full h-fit text-white font-futura text-[11vw] leading-tight z-30 pt-20">
+          <div className="absolute w-full h-fit text-white font-futura text-[16vw] sm:text-[11vw] leading-tight z-30 pt-32 md:pt-20">
             IN THE COLLECTION
           </div>
           <Collection />

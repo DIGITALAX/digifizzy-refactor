@@ -17,7 +17,7 @@ const Footer: FunctionComponent = (): JSX.Element => {
       <div className="relative grid auto-rows-auto grid-flow-row w-full h-full">
         <div
           id="foot3"
-          className="relative w-[80vw] xl:w-[67vw] place-self-center h-fit p-0.5 col-start-1 grid auto-cols-auto grid-flow-col"
+          className="relative w-full md:w-[80vw] xl:w-[67vw] place-self-center h-fit p-0.5 col-start-1 grid auto-cols-auto grid-flow-col"
         >
           <div className="relative bg-offBlack w-full h-full col-start-1 grid auto-rows-auto grid-flow-row pb-4">
             <div className="relative w-full h-fit row-start-1 grid grid-flow-col auto-cols-auto p-8">

@@ -12,7 +12,7 @@ module.exports = {
         skyBlue: "#BBEEFF",
         offWhite: "#F2F2F2",
         dull: "#CDAAA4",
-        sapph: "#0091FF"
+        sapph: "#0091FF",
       },
       fontFamily: {
         futur: "Futurist",
@@ -25,13 +25,16 @@ module.exports = {
         amR: "America Mono Regular",
         amM: "America Mono Medium",
         atmos: "Atmosphere",
-        dosis: "Dosis Regular"
+        dosis: "Dosis Regular",
       },
       cursor: {
         sewing: "url('/images/sewingCursor.png'), auto",
         sewingH: "url('/images/sewingCursorH.png'), auto",
         sewingS: "url('/images/sewingCursorSmall.png'), auto",
         sewingHS: "url('/images/sewingCursorHSmall.png'), auto",
+      },
+      screens: {
+        galaxy: "300px",
       },
     },
   },
