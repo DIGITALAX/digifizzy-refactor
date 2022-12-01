@@ -12,7 +12,7 @@ const Collection: FunctionComponent = (): JSX.Element => {
   let queryWindowSizeMobile: boolean = useMediaQuery("(max-width:660px)");
   let queryWindowSizeGalaxy: boolean = useMediaQuery("(max-width:300px)");
   return (
-    <div className="relative w-full md:w-[80vw] xl:w-[67vw] h-full grid grid-flow-col auto-cols-auto row-start-3 justify-self-center">
+    <div className="relative w-full md:w-[80vw] xl:w-[67vw] h-full grid grid-flow-col auto-cols-auto row-start-3 justify-self-center z-10">
       <div className="col-start-1 relative w-full h-fit grid grid-flow-row auto-rows-auto bg-black border-2 border-sapph gap-10 sm:gap-20 lg:gap-40 pt-28">
         <div className="relative w-full h-fit row-start-1 grid grid-flow-col auto-cols-auto galaxy:px-4 py-4 sm:p-16">
           <div className="relative w-fit h-fit col-start-1 row-start-1">
@@ -124,7 +124,7 @@ const Collection: FunctionComponent = (): JSX.Element => {
             Tune in 24/7. Collect <br /> on lens today.
           </div>
         </div>
-        <div className="relative w-full h-fit row-start-7 grid grid-flow-col auto-cols-auto pb-8 px-8">
+        <div className="relative w-full h-full row-start-7 grid grid-flow-col auto-cols-auto pb-8 px-8">
           <div className="relative w-fit h-full col-start-1 grid grid-flow-col auto-cols-auto gap-8">
             <div className="relative w-fit h-fit col-start-1 grid grid-flow-col auto-cols-auto gap-2 self-end">
               <div className="relative w-fit h-fit col-start-1 row-start-1 grid grid-flow-col auto-cols-auto">

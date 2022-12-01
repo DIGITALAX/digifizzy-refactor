@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
   return (
     <GlobalContext.Provider value={{ openFrame, setOpenFrame, newLink }}>
-      <div className="min-h-screen h-auto min-w-screen w-screen relative selection:bg-skyBlue selection:text-dull cursor-sewingS">
+      <div className="h-full h-auto min-w-screen w-screen relative selection:bg-skyBlue selection:text-dull cursor-sewingS">
         <div className="absolute w-full h-screen">
           <Image layout="fill" src={"/images/mask.png"} className="relative" />
         </div>
