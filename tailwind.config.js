@@ -13,6 +13,8 @@ module.exports = {
         offWhite: "#F2F2F2",
         dull: "#CDAAA4",
         sapph: "#0091FF",
+        viol: "#9A9BF6",
+        orang: "#FBDB86"
       },
       fontFamily: {
         futur: "Futurist",
@@ -26,6 +28,7 @@ module.exports = {
         amM: "America Mono Medium",
         atmos: "Atmosphere",
         dosis: "Dosis Regular",
+        folk: "Folklore",
       },
       cursor: {
         sewing: "url('/images/sewingCursor.png'), auto",

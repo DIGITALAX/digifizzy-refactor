@@ -9,6 +9,12 @@
 }
 
 @font-face {
+  font-family: "Folklore";
+  font-weight: 400;
+  src: url("/fonts/folklore.ttf");
+}
+
+@font-face {
   font-family: "Atmosphere";
   font-weight: 400;
   src: url("/fonts/Atmosphere-Regular.ttf");

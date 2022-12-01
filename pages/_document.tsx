@@ -94,8 +94,15 @@ class Document extends NextDocument {
                 @font-face {
                   font-family: "Dosis Regular";
                   font-weight: 400;
-                  src: url("/fonts/Dosis Regular.ttf");
+                  src: url("./fonts/Dosis Regular.ttf");
                 }
+
+                @font-face {
+                  font-family: "Folklore";
+                  font-weight: 400;
+                  src: url("./fonts/folklore.ttf");
+                }
+                
             `,
             }}
           ></style>

@@ -7,20 +7,18 @@ import Volume from "./Volume";
 const Issues: FunctionComponent = (): JSX.Element => {
   const { currentIssue, handleIssueUp, handleIssueDown, allIssues } =
     useIssues();
-    
+
   return (
     <div className="relative w-full h-full grid grid-flow-col auto-cols-auto row-start-2 justify-self-center">
       <div className="col-start-1 relative w-full h-fit grid grid-flow-col auto-cols-auto bg-black border-2 border-white lg:gap-0 gap-16">
-        <div className="relative h-fit w-fit col-start-1 font-futur text-white text-center justify-self-center row-start-1 pt-10 text-[4vw] sm:text-2xl md:text-lg md:text-2xl xl:text-4xl leading-10 z-10 sm:px-0 px-4">
-          Message stuff goes here. <br /> Something abvout creatrs
-          <br />
-          on the edge, the <br /> persistence of public <br /> memory, and 24/7
-          latent
-          <br /> waves…
+        <div className="relative h-fit w-fit col-start-1 font-futur text-white text-center justify-self-center row-start-1 pt-10 text-[4vw] sm:text-2xl md:text-lg md:text-2xl xl:text-3xl leading-loose z-10 sm:px-0 px-4">
+          YOU WORK TIRELESSLY TO FIND <br /> YOUR PLACE ON THE EGDE. EASE <br />{" "}
+          IN TO THE LO-FI EXPERIECE <br /> WITH 24/7 SYNTH SOUNDS AND <br /> NEW
+          LOOKS AS YOU SURF THE <br /> LATENT WAVES
         </div>
         <Volume />
         <div className="relative w-full h-full col-start-1 row-start-2 grid grid-flow-col auto-cols-auto md:pt-16 pb-10">
-          <div className="col-start-1 relative w-full sm:w-fit h-fit col-start-1 row-start-2 grid grid-flow-col auto-cols-auto gap-10 sm:gap-28 pb-6 pt-10 sm:pt-28 place-self-center">
+          <div className="col-start-1 relative w-full sm:w-fit h-fit col-start-1 row-start-2 grid grid-flow-col auto-cols-auto gap-10 lg:gap-28 pb-6 pt-10 sm:pt-28 place-self-center">
             <div className="relative w-fit h-fit row-start-1 col-start-1 grid grid-flow-row auto-rows-auto gap-10 place-self-center">
               <div className="relative w-fit h-fit row-start-1 text-white font-atmos text-7xl text-center place-self-center">
                 past <br /> issues*
@@ -58,11 +56,13 @@ const Issues: FunctionComponent = (): JSX.Element => {
                   </div>
                 </div>
               </div>
-              <div className="relative w-fit h-fit row-start-3 text-white font-dosis text-center place-self-center">
-                arweave in the process...
+              <div className="relative w-60 h-fit row-start-3 text-white font-dosis text-center place-self-center">
+                issue by issue, we are moving media from digifizzy vol 1 to a
+                new home. published on arweave for a more permaweb public
+                record.
               </div>
             </div>
-            <div className="relative w-full h-[150vw] galaxy:w-80 galaxy:h-[120vw] sm:h-[60vw] md:h-[50vw] lg:h-[40vw] xl:h-[30vw] row-start-2 col-start-1 sm:row-start-1 sm:col-start-2 grid grid-flow-row auto-rows-auto cursor-sewingHS hover:mix-blend-hard-light">
+            <div className="relative w-full h-[150vw] galaxy:w-80 galaxy:h-[120vw] sm:h-[60vw] md:h-[50vw] lg:h-[40vw] xl:h-[30vw] row-start-2 col-start-1 sm:row-start-1 sm:col-start-2 grid grid-flow-row auto-rows-auto cursor-sewingHS hover:mix-blend-hard-light place-self-center">
               <Image
                 src={`/images/magazine/mag${currentIssue}.webp`}
                 layout="fill"

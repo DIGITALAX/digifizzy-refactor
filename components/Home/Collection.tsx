@@ -21,29 +21,37 @@ const Collection: FunctionComponent = (): JSX.Element => {
               width={!queryWindowSizeGalaxy ? 550 : screen?.width}
               objectFit={!queryWindowSizeMobile ? "cover" : "contain"}
               objectPosition={"center"}
-              height={!queryWindowSizeMobile ? 300 : !queryWindowSizeGalaxy ? 600 : 400}
+              height={
+                !queryWindowSizeMobile
+                  ? 300
+                  : !queryWindowSizeGalaxy
+                  ? 600
+                  : 400
+              }
               className="relative w-fit h-fit"
             />
           </div>
           <div className="relative z-10 w-fit galaxy:w-80 h-fit bg-black p-4 text-white grid grid-flow-col auto-cols-auto sm:col-start-2 sm:row-start-1 row-start-1 col-start-1">
             <div className="relative w-fit h-fit text-white font-futur text-right col-start-1">
-              description mini paragraph about this section
+              the persistence of infinite memories
             </div>
           </div>
         </div>
         <div className="relative w-full h-fit row-start-2 grid grid-flow-col auto-cols-auto galaxy:p-4 sm:p-16 sm:gap-0 gap-12">
-          <div className="relative w-fit h-fit row-start-1 col-start-1 text-white text-left font-dosis place-self-center text-base sm:text-xs">
-            Metadata about the item featyred to <br />
-            the right of this section {"      "} in a format <br />
-            liike this where it jumps a biit {"  "}kind of
+          <div className="relative w-fit h-fit row-start-1 col-start-1 text-white text-left font-dosis place-self-center text-base sm:text-xs break-keep">
+            SYNTHWAVE SUNRISE
             <br />
-            like what is at the top {"    "}left of
+            the skyline in NYC was always a better format
             <br />
-            DIGITALAX {"    "}flagship site
+            for solar distortions it jumps a bit electric
             <br />
-            what it says
+            like who is the wandering nomad
             <br />
-            exactly, im not sure yet
+            in search of a better place AI & or ART
+            <br />
+            a collection
+            <br />
+            for DIGIFIZZY Vol. 2<br />
           </div>
           <div className="relative w-fit h-fit row-start-2 col-start-1 sm:row-start-1 sm:col-start-2 place-self-center hover:rotate-12">
             <Image src="/images/wave.png" width={280} height={400} />
@@ -51,17 +59,19 @@ const Collection: FunctionComponent = (): JSX.Element => {
         </div>
         <div className="relative w-full h-fit row-start-3 grid grid-flow-col auto-cols-auto galaxy:p-4 sm:p-16 sm:gap-0 gap-12">
           <div className="relative w-fit h-fit col-start-1 row-start-1 sm:col-start-2 text-white text-left font-dosis place-self-center text-base sm:text-xs">
-            Metadata about the item featyred to <br />
-            the right of this section {"      "} in a format <br />
-            liike this where it jumps a biit {"  "}kind of
+            NEVER EAST SIDE a study of the color and character of
             <br />
-            like what is at the top {"    "}left of
+            a neighborhod through windows into otherland lives
             <br />
-            DIGITALAX {"    "}flagship site
+            in pursuit of the neverending new bright nights
             <br />
-            what it says
+            glowing from the bodega corners in deep convolutions
             <br />
-            exactly, im not sure yet
+            portrait of a city AI & or ART
+            <br />
+            a collection
+            <br />
+            for DIGIFIZZY Vol. 2 <br />
           </div>
           <div className="relative w-fit h-fit col-start-1 row-start-2 sm:row-start-1 place-self-center hover:rotate-12">
             <Image src="/images/night.png" width={280} height={400} />
@@ -69,17 +79,13 @@ const Collection: FunctionComponent = (): JSX.Element => {
         </div>
         <div className="relative w-full h-fit row-start-4 grid grid-flow-col auto-cols-auto galaxy:p-4 sm:p-16 sm:gap-0 gap-12">
           <div className="relative w-fit h-fit row-start-1 col-start-1 text-white text-left font-dosis place-self-center text-base sm:text-xs">
-            Metadata about the item featyred to <br />
-            the right of this section {"      "} in a format <br />
-            liike this where it jumps a biit {"  "}kind of
-            <br />
-            like what is at the top {"    "}left of
-            <br />
-            DIGITALAX {"    "}flagship site
-            <br />
-            what it says
-            <br />
-            exactly, im not sure yet
+            THE LIMINAL ELSEWHERE is a graphic novel take <br />
+            on the origami nature of the infinite city <br />
+            in dichroic glass samples <br />
+            she walks the vector planes <br />
+            AI & or ART <br />
+            a collection <br />
+            for DIGIFIZZY Vol. 2
           </div>
           <div className="relative w-fit h-fit col-start-1 row-start-2 sm:row-start-1 sm:col-start-2 place-self-center hover:rotate-12">
             <Image src="/images/swish.png" width={280} height={400} />
@@ -87,17 +93,27 @@ const Collection: FunctionComponent = (): JSX.Element => {
         </div>
         <div className="relative w-full h-fit row-start-5 grid grid-flow-col auto-cols-auto galaxy:p-4 sm:p-16 sm:gap-0 gap-12">
           <div className="relative w-fit h-fit col-start-1 row-start-1 sm:col-start-2 text-white text-left font-dosis place-self-center text-base sm:text-xs">
-            Metadata about the item featyred to <br />
-            the right of this section {"      "} in a format <br />
-            liike this where it jumps a biit {"  "}kind of
+            BRILLIANT DAY FOR A TENNIS REMATCH urban escapades
             <br />
-            like what is at the top {"    "}left of
+            in a reflection of pure fantasy nostalgia
             <br />
-            DIGITALAX {"    "}flagship site
+            from the latent minds of better trades
             <br />
-            what it says
+            in the times before and after
             <br />
-            exactly, im not sure yet
+            i’d rather be playing virtual tennis
+            <br />
+            in the bahamas
+            <br />
+            than listen to another word on that paper <br />
+            of record breaking
+            <br />
+            stage <br />
+            AI & or ART
+            <br />
+            a collection
+            <br />
+            for DIGIFIZZY Vol. 2<br />
           </div>
           <div className="relative w-fit h-fit row-start-2 sm:row-start-1 col-start-1 place-self-center hover:rotate-12">
             <Image src="/images/court.png" width={280} height={400} />
@@ -105,9 +121,7 @@ const Collection: FunctionComponent = (): JSX.Element => {
         </div>
         <div className="relative w-full h-fit row-start-6 grid grid-flow-col auto-cols-auto galaxy:p-4 sm:p-16">
           <div className="relative w-60 galaxy:w-fit h-fit col-start-1 justify-self-center text-center text-white font-futur text-sm galaxy:text-xl sm:text-3xl leading-10">
-            Text about collect on lens, <br /> get IRL and <br /> featured NFTs
-            from the <br />
-            collection
+            Tune in 24/7. Collect <br /> on lens today.
           </div>
         </div>
         <div className="relative w-full h-fit row-start-7 grid grid-flow-col auto-cols-auto pb-8 px-8">
@@ -165,9 +179,9 @@ const Collection: FunctionComponent = (): JSX.Element => {
               })}
             </div>
           </div>
-          <div className="relative w-fit h-fit col-start-1 row-start-2 sm:pt-0 pt-10 sm:row-start-1 sm:col-start-2 justify-self-end text-white font-dosis text-right text-2xl">
-            bit more text about it <br />
-            as needed
+          <div className="relative w-fit h-fit col-start-1 row-start-2 sm:pt-0 pt-10 sm:row-start-1 sm:col-start-2 justify-self-end text-white font-dosis text-right text-xl">
+            featured drops streaming live <br />
+            in a lo-fi timeline near you
           </div>
         </div>
       </div>
