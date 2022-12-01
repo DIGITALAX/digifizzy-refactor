@@ -1,6 +1,7 @@
 import { FunctionComponent, useContext } from "react";
 import { GlobalContext } from "../../pages/_app";
 import { useMediaQuery } from "@material-ui/core";
+import Image from "next/image";
 
 const Header: FunctionComponent = (): JSX.Element => {
   const { openFrame, setOpenFrame, newLink } = useContext(GlobalContext);
@@ -27,9 +28,11 @@ const Header: FunctionComponent = (): JSX.Element => {
           )}
           {!queryWindowSizeMobile && (
             <div
-              className="relative w-14 h-10 col-start-2 rounded-xl border border-black bg-white cursor-sewingHS active:scale-95"
+              className="relative w-fit h-fit col-start-2 cursor-sewingHS active:scale-95"
               onClick={() => setOpenFrame(!openFrame)}
-            ></div>
+            >
+              <Image src="/images/tv.png" width={70} height={45} />
+            </div>
           )}
         </div>
       </div>
