@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [newLink, setNewLink] = useState(GlobalProfileContextDefault.newLink);
   const streamLinks: string[] = [
     "https://www.youtube.com/embed/Izh9pP18sVs?controls=0?rel=0&autoplay=1&mute=1",
-    // "https://www.youtube.com/embed/GNrerhak_pY?controls=0?rel=0&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/Izh9pP18sVs?controls=0?rel=0&autoplay=1&mute=1",
   ];
   useEffect(() => {
     const shuffledLinks: number[] = shuffle([0, 1]);
