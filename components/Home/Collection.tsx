@@ -7,7 +7,7 @@ const Collection: FunctionComponent = (): JSX.Element => {
   const iframes: string[] = ["yt1", "yt2"];
   const links: string[] = [
     "https://www.youtube.com/embed/Izh9pP18sVs",
-    // "https://www.youtube.com/embed/dXowrolrFz0",
+    "https://www.youtube.com/embed/Izh9pP18sVs",
   ];
   let queryWindowSizeMobile: boolean = useMediaQuery("(max-width:660px)");
   let queryWindowSizeGalaxy: boolean = useMediaQuery("(max-width:300px)");
