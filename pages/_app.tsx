@@ -11,7 +11,7 @@ export const GlobalProfileContextDefault = {
   openFrame: false,
   setOpenFrame: (expressInterest: boolean) => {},
   newLink:
-    "https://www.youtube.com/embed/2Sa8o39R0jY?controls=0?rel=0&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/__PtdR1xZYY?controls=0?rel=0&autoplay=1&mute=1",
 };
 
 export const GlobalContext = createContext(GlobalProfileContextDefault);
@@ -22,8 +22,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   );
   const [newLink, setNewLink] = useState(GlobalProfileContextDefault.newLink);
   const streamLinks: string[] = [
-    "https://www.youtube.com/embed/2Sa8o39R0jY?controls=0?rel=0&autoplay=1&mute=1",
-    "https://www.youtube.com/embed/qaoyC8D5Kt0?controls=0?rel=0&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/__PtdR1xZYY?controls=0?rel=0&autoplay=1&mute=1",
+    "https://www.youtube.com/embed/CqpU5vCQxGM?controls=0?rel=0&autoplay=1&mute=1",
   ];
   useEffect(() => {
     const shuffledLinks: number[] = shuffle([0, 1]);
