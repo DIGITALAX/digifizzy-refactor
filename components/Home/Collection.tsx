@@ -6,8 +6,8 @@ import { useMediaQuery } from "@material-ui/core";
 const Collection: FunctionComponent = (): JSX.Element => {
   const iframes: string[] = ["yt1", "yt2"];
   const links: string[] = [
-    "https://www.youtube.com/embed/__PtdR1xZYY",
-    "https://www.youtube.com/embed/CqpU5vCQxGM",
+    "https://www.youtube.com/embed/Jtsfk7u6Mxw",
+    "https://www.youtube.com/embed/ntzmHYiy2Ko",
   ];
   let queryWindowSizeMobile: boolean = useMediaQuery("(max-width:660px)");
   let queryWindowSizeGalaxy: boolean = useMediaQuery("(max-width:300px)");
